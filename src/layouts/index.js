@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import './index.scss'
 
 const Header = () =>
   <div
@@ -80,7 +80,7 @@ const Footer = () =>
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="ik - dsmftw"
+      title="Igor Kozlov"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },

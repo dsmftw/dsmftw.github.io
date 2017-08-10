@@ -5,6 +5,18 @@ html {
 }
 body {
   margin: 0;
+  background: #696969;
+  p {
+    color: #FFFAFA;
+  }
+  h1 {
+    color: #FFF;
+  }
+}
+nav {
+  ul {
+    list-style-type: none;
+  }
 }
 article,
 aside,
