@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Igor Kozlov`,
+    title: `dsmftw portfolio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`
   ],
-  pathPrefix: `/dsmftw.github.io`,
+  pathPrefix: `/`,
 }

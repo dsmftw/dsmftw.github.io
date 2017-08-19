@@ -60,6 +60,6 @@ typings/
 
 yarn.lock
 .cache/
-public/
 *.swp
 *.vim
+#public/
