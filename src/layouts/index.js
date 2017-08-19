@@ -6,27 +6,10 @@ import Helmet from 'react-helmet'
 import './index.scss'
 
 const Header = () =>
-  <div
-    style={{
-      background: 'lightsteelblue',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'seashell',
-            textDecoration: 'none',
-          }}
-        >
+  <header>
+    <div>
+      <h1>
+        <Link to="/">
           dsmftw.github.io
         </Link>
       </h1>
@@ -37,7 +20,7 @@ const Header = () =>
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
 
 const FooterLinks = [
   {
@@ -50,20 +33,9 @@ const FooterLinks = [
 ]
 
 const Footer = () =>
-  <div
-    style={{
-      background: 'lightsteelblue',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h3 style={{ margin: 0, color: 'seashell', }}>Other ways to connect</h3>
+  <footer>
+    <div>
+      <h3>Check out my</h3>
       <ul>
         {FooterLinks.map(fl => (
            <li key={fl.name}>
@@ -73,30 +45,23 @@ const Footer = () =>
            </li>
          ))}
       </ul>
+      <p><small>Made with <a target="_blank" rel="nofollow" href='https://www.gatsbyjs.org/'>Gatsby.js</a> and hosted on Github</small></p>
     </div>
-  </div>
-
+  </footer>
 
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
       title="Igor Kozlov"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Portfolio' },
+        { name: 'keywords', content: 'personal, portfolio' },
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <main>
       {children()}
-    </div>
+    </main>
     <Footer />
   </div>
 

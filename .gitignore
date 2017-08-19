@@ -62,4 +62,4 @@ yarn.lock
 .cache/
 public/
 *.swp
-
+*.vim

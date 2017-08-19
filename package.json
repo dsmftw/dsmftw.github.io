@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.7.1",
-    "gatsby-link": "^1.6.5",
-    "gatsby-plugin-react-helmet": "^1.0.1",
-    "gatsby-plugin-sass": "^1.0.1"
+    "gatsby": "^1.8.11",
+    "gatsby-link": "^1.6.7",
+    "gatsby-plugin-react-helmet": "^1.0.2",
+    "gatsby-plugin-sass": "^1.0.2"
   },
   "keywords": [
     "gatsby"
@@ -15,12 +15,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "deploy": "rm -rf public && gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "prettier": "^1.5.3"
   }
 }
