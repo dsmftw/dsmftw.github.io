@@ -1,13 +1,13 @@
 {
   "name": "dsmftw-portfolio",
   "description": "personal website",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Igor Kozlov",
   "dependencies": {
-    "gatsby": "^1.8.11",
-    "gatsby-link": "^1.6.7",
-    "gatsby-plugin-react-helmet": "^1.0.2",
-    "gatsby-plugin-sass": "^1.0.2"
+    "gatsby": "^1.9.21",
+    "gatsby-link": "^1.6.16",
+    "gatsby-plugin-react-helmet": "^1.0.6",
+    "gatsby-plugin-sass": "^1.0.10"
   },
   "keywords": [
     "gatsby"
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy": "rm -rf public && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "prettier": "^1.5.3"
+    "prettier": "^1.6.1"
   }
 }

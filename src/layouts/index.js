@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import './index.scss'
 
-const Header = () =>
+const Header = () => (
   <header>
     <div>
       <h1>
@@ -21,6 +21,7 @@ const Header = () =>
       </nav>
     </div>
   </header>
+)
 
 const FooterLinks = [
   {
@@ -32,7 +33,7 @@ const FooterLinks = [
   }
 ]
 
-const Footer = () =>
+const Footer = () => (
   <footer>
     <div>
       <h3>Check out my</h3>
@@ -48,8 +49,9 @@ const Footer = () =>
       <p><small>Made with <a target="_blank" rel="nofollow" href='https://www.gatsbyjs.org/'>Gatsby.js</a> and hosted on Github</small></p>
     </div>
   </footer>
+)
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Igor Kozlov"
@@ -64,6 +66,7 @@ const TemplateWrapper = ({ children }) =>
     </main>
     <Footer />
   </div>
+)
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
