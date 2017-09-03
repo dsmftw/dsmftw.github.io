@@ -60,7 +60,40 @@ header {
       a {
         color: $title;
       }
+      @media only screen and (max-width: 480px) {
+        float: none;
+        margin-bottom: 1.45rem;
+      }
     }
+  }
+}
+
+nav {
+  ul {
+    overflow: hidden;
+    float: right;
+    @media only screen and (max-width: 480px) {
+      float: none;
+    }
+  }
+  li {
+    float: left;
+    margin: 0;
+    @media only screen and (max-width: 480px) {
+      float: none;
+      justify-content: center;
+    }
+  }
+  li a {
+    display: block;
+    color: $fg;
+    letter-spacing: 5px;
+    font-size: 28px;
+    text-align: center;
+    padding: 8px 16px;
+  }
+  li a:hover {
+    color: $hover;
   }
 }
 
@@ -115,27 +148,6 @@ main {
 
 a {
   color: white;
-}
-
-nav {
-  ul {
-    overflow: hidden;
-  }
-  li {
-    float: right;
-    margin: 0;
-  }
-  li a {
-    display: block;
-    color: $fg;
-    letter-spacing: 5px;
-    font-size: 28px;
-    text-align: center;
-    padding: 8px 16px;
-  }
-  li a:hover {
-    color: $hover;
-  }
 }
 
 h1 {
