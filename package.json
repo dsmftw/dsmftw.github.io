@@ -1,7 +1,7 @@
 {
   "name": "dsmftw-portfolio",
   "description": "personal website",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Igor Kozlov",
   "dependencies": {
     "gatsby": "^1.9.21",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public --branch master",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
