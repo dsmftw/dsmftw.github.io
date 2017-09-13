@@ -16,7 +16,7 @@ const Header = () => (
       <nav>
         <ul>
           <li><Link to="/about/">About</Link></li>
-          <li><Link to="/cv/">CV</Link></li>
+          <li><Link to="/cv/">R&eacute;sum&eacute;</Link></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +46,7 @@ const Footer = () => (
            </li>
          ))}
       </ul>
-      <p><small>Made with <a target="_blank" rel="nofollow" href='https://www.gatsbyjs.org/'>Gatsby.js</a> and hosted on Github</small></p>
+      <p><small>&copy; 2017 Igor Kozlov</small></p>
     </div>
   </footer>
 )

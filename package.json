@@ -1,13 +1,13 @@
 {
   "name": "dsmftw-portfolio",
   "description": "personal website",
-  "version": "0.2.0",
-  "author": "Igor Kozlov",
+  "version": "0.2.1",
+  "author": "Igor Kozlov <ikozlov@sfu.ca>",
   "dependencies": {
-    "gatsby": "^1.9.21",
+    "gatsby": "^1.9.24",
     "gatsby-link": "^1.6.16",
     "gatsby-plugin-react-helmet": "^1.0.6",
-    "gatsby-plugin-sass": "^1.0.10"
+    "gatsby-plugin-sass": "^1.0.11"
   },
   "keywords": [
     "gatsby"
