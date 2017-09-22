@@ -1,13 +1,13 @@
 # dsmftw.github.io
-The source code for my personal website [dsmftw.github.io] (https://dsmftw.github.io/)
+The source code for my personal website [dsmftw.github.io](https://dsmftw.github.io/)
 
 ## Current tech stack
-* [Gatsby] (https://www.gatsbyjs.org/)
-* [React.js] (https://facebook.github.io/react/)
-* [Node.js] (https://nodejs.org/en/) / [npm] (https://www.npmjs.com/)
-* [Babel] (https://babeljs.io/)
-* [webpack] (https://webpack.js.org/)
-* [SASS] (http://sass-lang.com/)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [React.js](https://facebook.github.io/react/)
+* [Node.js](https://nodejs.org/en/) / [npm](https://www.npmjs.com/)
+* [Babel](https://babeljs.io/)
+* [webpack](https://webpack.js.org/)
+* [SASS](http://sass-lang.com/)
 
 ## RTFM
 
@@ -20,7 +20,7 @@ npm i
 ```
 
 ### Run
-`gatsby develop` -- starts a hot-reloading dev environment
+`gatsby develop` -- start a hot-reloading dev environment
 
 ### Deploy
 `npm run deploy` -- deploy to gh-pages
