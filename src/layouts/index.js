@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import 'typeface-open-sans'
 
 import './index.scss'
 
@@ -28,7 +29,7 @@ const FooterLinks = [
     name: 'LinkedIn',
     url:  'https://www.linkedin.com/in/kozlov-igor/'
   }, {
-    name: 'Github',
+    name: 'GitHub',
     url:  'https://github.com/dsmftw'
   }
 ]
@@ -56,8 +57,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Igor Kozlov"
       meta={[
-        { name: 'description', content: 'Portfolio' },
-        { name: 'keywords', content: 'personal, portfolio' },
+        { name: 'description', content: 'Software Developer' },
+        { name: 'keywords', content: 'personal website, portfolio' },
       ]}
     />
     <Header />

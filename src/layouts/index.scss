@@ -3,7 +3,7 @@ $fg: #ebdbb2;
 $hover: #a89984;
 $title: #689d6a;
 $social: #458588;
-/* The colors are borrowed from my favorite Vim color scheme
+/* The color choice is inspired by my favorite Vim color scheme
   https://github.com/morhetz/gruvbox#palette */
 html {
   -ms-text-size-adjust: 100%;
@@ -12,7 +12,7 @@ html {
 body {
   background: $bg;
   margin: 0;
-  font: 16px/1 sans-serif;
+  font: 16px/1 "Open Sans", sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -56,6 +56,7 @@ header {
     max-width: 960px;
     padding: 1.45rem;
     h1 {
+      font-size: 28px;
       text-align: center;
       margin-bottom: 0;
       float: left;
@@ -90,7 +91,7 @@ nav {
     display: block;
     color: $fg;
     letter-spacing: 5px;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     padding: 8px 16px;
   }
@@ -109,7 +110,7 @@ footer {
     padding: 1.45rem 1.0875rem;
   }
   p {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   ul {
     display: flex;
@@ -131,10 +132,14 @@ footer {
 }
 
 main {
+  @media only screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+  font-size: 22px;
   margin: 50px auto;
   max-width: 960px;
   padding: 100px 5%;
-  min-height: 25vh;
+  min-height: 20vh;
   color: $fg;
   h1 {
     text-transform: uppercase;
@@ -153,15 +158,15 @@ a {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 1.62671rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.38316rem;
+  font-size: 1.8rem;
 }
 
 p {
