@@ -3,9 +3,20 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
   <div>
-    <h1>Hello, world!</h1>
-    <p>This is my first hands-on experience with Node.js / React and first time using a static site generator, in particular <a target="_blank" rel="nofollow" href='https://www.gatsbyjs.org/'>Gatsby.js</a>.</p>
-    <p>The goal is to refresh my front-end skills and to explore bleeding edge web technologies, while building my portfolio page.</p>
+    <div id="left-panel">
+      <h2>
+        Igor<br />
+        Kozlov
+      </h2>
+    </div>
+    <div id="right-panel">
+      <h3>
+        Simon Fraser University<br />
+        Bachelor of Science<br />
+        Computing Science Major<br />
+        2017
+      </h3>
+    </div>
   </div>
 )
 

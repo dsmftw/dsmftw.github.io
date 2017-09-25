@@ -1,7 +1,7 @@
 {
   "name": "dsmftw-portfolio",
   "description": "personal website",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Igor Kozlov",
   "dependencies": {
     "gatsby": "^1.9.42",
