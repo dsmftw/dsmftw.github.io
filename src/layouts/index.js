@@ -57,8 +57,17 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Igor Kozlov"
       meta={[
-        { name: 'description', content: 'Software Developer' },
-        { name: 'keywords', content: 'personal website, portfolio' },
+        { name: 'description', content: 'Welcome to the personal website of Igor Kozlov (BSc, Computing Science, Software Engineer).' },
+        { name: 'keywords', content: 'software engineer, software devloper, database developer, gatsby, personal website, portfolio' },
+        { name: 'theme-color', content: '#689d6a' },
+      ]}
+      link={[
+        { rel: 'apple-touch-icon', sizes: '180x180',  href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16',  href: '/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32',  href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '96x96',  href: '/favicon-96x96.png' },
+        { rel: 'manifest', href: '/manifest.json' },
+        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       ]}
     />
     <Header />
