@@ -18,6 +18,7 @@ const Header = () => (
         <ul>
           <li><Link to="/about/">About</Link></li>
           <li><Link to="/cv/">R&eacute;sum&eacute;</Link></li>
+          <li><Link to="/contact/">Contact</Link></li>
         </ul>
       </nav>
     </div>
@@ -37,7 +38,7 @@ const FooterLinks = [
 const Footer = () => (
   <footer>
     <div>
-      <h3>Check out my</h3>
+      <h3>Get in touch</h3>
       <ul>
         {FooterLinks.map(fl => (
            <li key={fl.name}>

@@ -4,8 +4,8 @@
   "version": "0.2.3",
   "author": "Igor Kozlov",
   "dependencies": {
-    "gatsby": "^1.9.76",
-    "gatsby-link": "^1.6.23",
+    "gatsby": "^1.9.96",
+    "gatsby-link": "^1.6.24",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.12",
     "prettier": "^1.7.4",
