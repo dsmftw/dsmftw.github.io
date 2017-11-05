@@ -5,7 +5,7 @@ const mailto = 'mailto:ikozlov@sfu.ca'
 
 const ContactPage = () => (
   <div>
-    <h1>Contact me</h1>
+    <h1>Contact</h1>
     <p>Feel free to email me directly at <a href={mailto}>ikozlov@sfu.ca</a></p>
   </div>
 )

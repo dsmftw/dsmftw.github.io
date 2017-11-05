@@ -3,6 +3,8 @@ $fg: #ebdbb2;
 $hover: #928374;
 $title: #689d6a;
 $social: #458588;
+$social-hover: #a89984;
+$social-hover-bg: #076678;
 $name: #fbf1c1;
 $shadow: #0f0f0f;
 /* The color choice is inspired by my favorite Vim color scheme
@@ -18,21 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-p,
-ul {
+h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
-main,
-li {
-  display: block;
-}
-h1,
-h2,
-h3 {
+main, li { display: block; }
+h1, h2, h3 {
   font-size: inherit;
   margin-bottom: 1.45rem;
 }
@@ -61,7 +54,16 @@ header {
       float: left;
       a {
         color: $title;
+        display: inline-block;
       }
+      a:after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px $title;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+      }
+      a:hover:after { transform: scaleX(1); }
       @media only screen and (max-width: 590px) {
         float: none;
         margin-bottom: 1.45rem;
@@ -74,9 +76,7 @@ nav {
   ul {
     overflow: hidden;
     float: right;
-    @media only screen and (max-width: 590px) {
-      float: none;
-    }
+    @media only screen and (max-width: 590px) { float: none; }
   }
   li {
     float: left;
@@ -89,14 +89,12 @@ nav {
   li a {
     display: block;
     color: $fg;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 22px;
     text-align: center;
-    padding: 8px 16px;
+    padding: 8px 12px;
   }
-  li a:hover {
-    color: $hover;
-  }
+  li a:hover { color: $hover; }
 }
 
 main {
@@ -117,9 +115,7 @@ main {
     text-align: center;
     margin-bottom: 40px;
   }
-  p + p {
-    margin-top: 1rem;
-  }
+  p + p { margin-top: 1rem; }
 }
 
 footer {
@@ -131,19 +127,19 @@ footer {
     max-width: 960px;
     padding: 1.45rem 1.0875rem;
   }
-  p {
-    margin-top: 2rem;
-  }
+  p { margin-top: 2rem; }
   ul {
     display: flex;
     justify-content: center;
-    li + li {
-      margin-left: 20px;
-    }
+    li + li { margin-left: 20px; }
     a {
       padding: 10px;
       border-radius: 5px;
       background-color: $social;
+    }
+    a:hover {
+      color: $social-hover;
+      background-color: $social-hover-bg;
     }
   }
   h3 {
@@ -200,17 +196,13 @@ footer {
 }
 
 // https://stackoverflow.com/questions/8160514/is-there-css-for-typesetting-the-latex-logo-in-html
-.latex sub, .latex sup {
-  text-transform: uppercase;
-}
+.latex sub, .latex sup { text-transform: uppercase; }
 .latex sub {
   vertical-align: -0.5ex;
   margin-left: -0.1667em;
   margin-right: -0.125em;
 }
-.latex, .latex sub {
-  font-size: 1em;
-}
+.latex, .latex sub { font-size: 1em; }
 .latex sup {
   font-size: 0.85em;
   vertical-align: 0.15em;
@@ -218,18 +210,8 @@ footer {
   margin-right: -0.15em;
 }
 
-a {
-  color: white;
-}
-h1 {
-  font-size: 2.8rem;
-}
-h2 {
-  font-size: 2.2rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
-p {
-  line-height: 1.7em;
-}
+a { color: white; }
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+p { line-height: 1.7em; }

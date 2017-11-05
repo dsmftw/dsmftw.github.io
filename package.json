@@ -1,14 +1,13 @@
 {
   "name": "dsmftw-portfolio",
   "description": "personal website",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Igor Kozlov",
   "dependencies": {
-    "gatsby": "^1.9.96",
+    "gatsby": "^1.9.100",
     "gatsby-link": "^1.6.24",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.12",
-    "prettier": "^1.7.4",
     "typeface-open-sans": "0.0.35"
   },
   "keywords": [
@@ -29,6 +28,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "prettier": "^1.7.0"
+    "prettier": "^1.7.4"
   }
 }
